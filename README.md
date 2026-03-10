@@ -92,20 +92,20 @@ The Seq2Seq model with Bahdanau attention was trained using the following hyperp
 These hyperparameters were chosen to allow the model to learn meaningful representations while keeping training computationally manageable.
 
 ---
-## Repository Structure
-
-```
 seq2seq/
-├── README.md                          # This file
+├── README.md                              # Project documentation
+├── seq2seq_bahdanau_with_plots.py         # Seq2Seq model with Bahdanau attention and training pipeline
+│
 ├── src/
-│   └── preprocess.py                  # Data preprocessing and conversion script
+│   ├── preprocess.py                      # Data preprocessing script
+│   ├── training_loss.png                  # Training loss plot
+│   └── test_loss.png                      # Test loss plot
+│
 ├── data/
-│   ├── eng-fra.txt                    # Original dataset (raw)
-│   ├── eng-fra_cleaned.tsv            # Full cleaned dataset
-│   ├── eng-fra_train.tsv              # Training set (80%)
-│   └── eng-fra_test.tsv               # Test set (20%)
-└── ASSIGNMENT_REPORT.md               # Detailed assignment report
-```
+│   ├── eng-fra.txt                        # Original dataset (raw)
+│   ├── eng-fra_cleaned.tsv                # Cleaned dataset
+│   ├── eng-fra_train.tsv                  # Training dataset
+│   └── eng-fra_test.tsv                   # Test dataset
 
 ---
 
@@ -143,17 +143,17 @@ This will:
 
 ## Training Loss Plot
 
-The following plot shows the training loss over epochs during model training.
+The following plot shows how the training loss decreases across epochs as the Seq2Seq model learns to translate English sentences into French.
 
-![Training Loss](training_loss.png)
+![Training Loss](src/training_loss.png)
 
 ---
 
 ## Test Loss Plot
 
-The following plot shows the loss on the test dataset, indicating how well the model generalizes to unseen data.
+The following plot shows the loss on the test dataset. This helps evaluate how well the model generalizes to unseen sentences.
 
-![Test Loss](test_loss.png)
+![Test Loss](src/test_loss.png)
 
 ---
 
