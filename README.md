@@ -153,11 +153,13 @@ This will:
 - pandas
 - scikit-learn
 
-Install dependencies:
-```bash
-pip install pandas scikit-learn
-```
+**Setup**
 
+- python3 -m venv .venv
+- source .venv/bin/activate
+- pip install --upgrade pip
+- pip install pandas scikit-learn
+- pip install torch
 ---
 
 ## Citation
