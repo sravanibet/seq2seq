@@ -82,7 +82,7 @@ The Seq2Seq model with Bahdanau attention was trained using the following hyperp
 |---|---|
 | Embedding Size | 256 |
 | Hidden Size | 256 |
-| Batch Size | 32 |
+| Batch Size | 64 |
 | Epochs | 10 |
 | Learning Rate | 0.001 |
 | Optimizer | Adam |
