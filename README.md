@@ -91,7 +91,9 @@ The Seq2Seq model with Bahdanau attention was trained using the following hyperp
 
 These hyperparameters were chosen to allow the model to learn meaningful representations while keeping training computationally manageable.
 
----
+## Repository Structure
+
+```
 seq2seq/
 ├── README.md                              # Project documentation
 ├── seq2seq_bahdanau_with_plots.py         # Seq2Seq model with Bahdanau attention and training pipeline
@@ -107,7 +109,7 @@ seq2seq/
 │   ├── eng-fra_train.tsv                  # Training dataset
 │   └── eng-fra_test.tsv                   # Test dataset
 
----
+```
 
 ## Usage
 
