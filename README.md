@@ -74,6 +74,24 @@ All processed datasets are saved in TSV format with headers:
 
 ---
 
+## Choice of Hyperparameters
+
+The Seq2Seq model with Bahdanau attention was trained using the following hyperparameters. These values were selected to balance model performance and training efficiency.
+
+| Hyperparameter | Value |
+|---|---|
+| Embedding Size | 256 |
+| Hidden Size | 256 |
+| Batch Size | 32 |
+| Epochs | 10 |
+| Learning Rate | 0.001 |
+| Optimizer | Adam |
+| Attention Type | Bahdanau Attention |
+| Loss Function | CrossEntropyLoss |
+
+These hyperparameters were chosen to allow the model to learn meaningful representations while keeping training computationally manageable.
+
+---
 ## Repository Structure
 
 ```
@@ -120,6 +138,22 @@ This will:
 - Clean and normalize the text
 - Generate the three TSV files (cleaned, train, test)
 - Display statistics and sample examples
+
+---
+
+## Training Loss Plot
+
+The following plot shows the training loss over epochs during model training.
+
+![Training Loss](training_loss.png)
+
+---
+
+## Test Loss Plot
+
+The following plot shows the loss on the test dataset, indicating how well the model generalizes to unseen data.
+
+![Test Loss](test_loss.png)
 
 ---
 
