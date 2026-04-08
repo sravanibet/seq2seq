@@ -202,10 +202,4 @@ The following plot shows the loss on the test dataset. This helps evaluate how w
 
 **Dataset Source**: Tatoeba Project (https://tatoeba.org/)
 
----
 
-## Author
-Sravani B
-
-## Date
-February 28, 2026
